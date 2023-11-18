@@ -8,8 +8,10 @@ describe("SimpleButton", () => {
         // 1. コンポーネントの描画
         render(<SimpleButton onClick={onClickMock}>ボタン</SimpleButton>);
         // 2. <button></button>を取得
-        userEvent.click(screen.getByRole("button"));
-        // 3. クリック時に引数に渡された関数が実行されているか確認する
+        const button = screen.getByRole("button")
+        // 3. <button></button>をクリック
+        userEvent.click(button);
+        // 4. クリック時に引数に渡された関数が実行されているか確認する
         expect(onClickMock).toHaveBeenCalledTimes(1);
     });
 
@@ -18,8 +20,10 @@ describe("SimpleButton", () => {
         // 1. コンポーネントの描画
         render(<SimpleButton onClick={onClickMock} isDisabled>ボタン</SimpleButton>);
         // 2. <button></button>を取得
-        userEvent.click(screen.getByRole("button"));
-        // 3. クリック時に引数に渡された関数が実行されていないか確認する
+        const button = screen.getByRole("button")
+        // 3. <button></button>をクリック
+        userEvent.click(button);
+        // 4. クリック時に引数に渡された関数が実行されていないか確認する
         expect(onClickMock).toHaveBeenCalledTimes(0);
     });
 });
