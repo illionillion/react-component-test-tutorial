@@ -1,4 +1,5 @@
 import { FC, ReactNode } from "react";
+import './index.css'
 
 interface SimpleButtonProps {
     children: ReactNode
@@ -7,5 +8,5 @@ interface SimpleButtonProps {
 }
 
 export const SimpleButton:FC<SimpleButtonProps> = ({children, isDisabled, onClick}) => {
-    return <button onClick={onClick} disabled={isDisabled}>{children}</button>
+    return <button onClick={onClick} className="simple-button" disabled={isDisabled}>{children}</button>
 }

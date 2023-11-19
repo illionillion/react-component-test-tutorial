@@ -1,0 +1,17 @@
+.simple-button {
+    width: 60px;
+    padding-block: 0.5rem;
+    background-color: aliceblue;
+    border: 1px solid darkcyan;
+    color: darkcyan;
+}
+
+.simple-button:active:not(:disabled) {
+    background-color: darkcyan;
+    border: 1px solid darkcyan;
+    color: aliceblue;
+}
+
+.simple-button:disabled {
+    opacity: 0.5;
+}
