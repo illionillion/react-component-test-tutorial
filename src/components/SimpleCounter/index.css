@@ -1,0 +1,23 @@
+.simple-counter {
+    width: 100vw;
+    height: 100svh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.simple-counter__buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.simple-counter__count-view {
+    font-size: larger;
+}
+
+.simple-counter__count-view span {
+    color: red;
+    font-weight: bolder;
+}

@@ -1,10 +1,10 @@
-import { SimpleButton } from "./components/SimpleButton";
+import { SimpleCounter } from "./components/SimpleCounter";
 
 function App() {
+
   return (
     <div className="App">
-      <SimpleButton onClick={() => console.log('clicked!!')} >ボタン</SimpleButton>
-      <SimpleButton isDisabled onClick={() => console.log('clicked!!')} >ボタン</SimpleButton>
+      <SimpleCounter />
     </div>
   );
 }
