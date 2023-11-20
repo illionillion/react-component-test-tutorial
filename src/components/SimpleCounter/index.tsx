@@ -1,4 +1,4 @@
-import { FC } from "react"
+import type { FC } from "react"
 import { useCounter } from "../../hooks/useCounter"
 import { SimpleButton } from "../SimpleButton"
 import './index.css'
